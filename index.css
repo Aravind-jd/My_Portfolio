@@ -1,0 +1,488 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #000000;
+  scroll-behavior: smooth;
+  animation-name: slidein;
+  animation-duration: 2s;
+}
+
+
+header {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content:center;
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+nav .logo {
+  font-size: 50px;
+  font-family: 'Tangerine';
+  font-weight: 600;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  
+}
+
+nav ul li {
+  margin: 0 15px;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  font-family: 'Roboto Slab';
+}
+
+
+
+.hero {
+  max-width: 700px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+.hero ul li a {
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-family: 'Macondo';
+  margin-bottom: 20px;
+  font-weight: 600;
+  scroll-behavior: smooth;
+  text-decoration-line: underline;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  scroll-behavior: smooth;
+}
+
+.hero .btn {
+  background-color: #ff4b5c;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  border-radius: 5px;
+  transition: 2s;
+  font-weight: 600;
+}
+
+.about, .projects, .skills, .contact, .hobbies {
+  padding: 50px 20px;
+  background-color: white;
+  margin: 50px 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  scroll-behavior: smooth;
+  animation-name: slidein;
+  animation-duration:3s;
+}
+
+.about h2{
+  font-family: 'Roboto Slab';
+}
+
+.about1 {
+  background-color: #bba9a5;
+  margin: 50px 0;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  scroll-behavior: smooth;
+  animation-name: slidein;
+  animation-duration: 2s;
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+
+
+.about1 h3 {
+  justify-content: space-between;
+  font-size: 30px;
+  color: black;
+  font-family: 'Tangerine';
+  text-align: right;
+  transition
+}
+.about1 h4 {
+  text-align: right;
+  font-weight: normal;
+  color: black;
+  font-size: 15px;
+}
+
+.about p {
+  justify-content: space-between;
+  text-align: center;
+  font-size: 15px;
+}
+
+.about img {
+  max-width: 300px;
+  scroll-behavior: smooth;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  justify-content: left;
+}
+
+.projects h2 {
+  font-family: 'Roboto Slab';
+}
+
+.project-gallery {
+  display: flex;
+  scroll-behavior: smooth;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  scroll-behavior: smooth;
+}
+
+.project-item {
+  width: 15%;
+  margin-bottom: 50px;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.project-item img {
+  width: 100%;
+  height: 200px;
+  scroll-behavior: smooth;
+  border-radius: 80%;
+}
+
+
+
+
+.project-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 80%;
+}
+
+.project-item:hover .overlay {
+  opacity: 3;
+  scroll-behavior: smooth;
+}
+
+.project-item h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  scroll-behavior: smooth;
+}
+
+.project-item p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  scroll-behavior: smooth;
+
+}
+
+.project-item .btn {
+  background-color: #ff4b5c;
+  color: white;
+  padding: 0px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  scroll-behavior: smooth;
+
+}
+
+.skills h2 {
+  font-family: 'Roboto Slab';
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  scroll-behavior: smooth;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  width: 45%;
+  scroll-behavior: smooth;
+  margin-bottom: 20px;
+}
+
+.skill-bar {
+  background-color: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+  margin-top: 5px;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #000000;
+  scroll-behavior: smooth;
+  border-radius: 5px;
+}
+
+
+.resume {
+  padding: 20px 20px;
+  font-family: 'Roboto Slab';
+  background-color: #e6bbb2;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  scroll-behavior: smooth;
+  animation-name: slidein;
+  animation-duration:3s;
+}
+
+
+.resume img {
+  height: 400%;
+    width: 100%;
+    border-radius: 5px;
+    animation-name: slidein;
+    animation-duration: 3s;
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+
+
+
+.projects {
+  background-color: #e6bbb2;
+}
+
+.hobbies h2 {
+  font-family: 'Roboto Slab';
+}
+
+.hobbies-gallery {
+  display: flex;
+  scroll-behavior: smooth;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  scroll-behavior: smooth;
+}
+
+.hobbies-item {
+  width: 15%;
+  margin-bottom: 50px;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.hobbies-item img {
+  width: 100%;
+  height: 200px;
+  scroll-behavior: smooth;
+  border-radius: 20%;
+}
+
+
+
+.hobbies-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 20%;
+}
+
+.hobbies-item:hover .overlay {
+  opacity: 1;
+  scroll-behavior: smooth;
+}
+
+.hobbies-item h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  scroll-behavior: smooth;
+}
+
+.hobbies-item p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  scroll-behavior: smooth;
+
+}
+
+.hobbies-item .btn {
+  background-color: #ff4b5c;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  scroll-behavior: smooth;
+
+}
+
+
+
+.hobbies-item .open-popup-button {
+  cursor: pointer;
+  font-size: 20px;
+  width: 600px;
+  font-family: 'Roboto Slab';
+  scroll-behavior: smooth;
+}
+
+
+
+.hobbies-item .popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  color: black;
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.hobbies-item .popup-content {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 80px;
+  border-radius: 15px;
+  width: 800px;
+  height: 100%;
+  text-align: space-between;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.hobbies-item .popup-content img {
+  justify-content: space-between;
+  padding: 30px;
+  width: 300px;
+  height: 250px;
+}
+
+.hobbies-item .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.contact h2 {
+  font-family: 'Roboto Slab';
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  align-items: center;
+}
+
+.contact form input, .contact form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+}
+
+.contact form .btn {
+  background-color: #ff4b5c;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  scroll-behavior: smooth;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 15px;
+  scroll-behavior: smooth;
+}
+
+
+footer .socials img {
+  width: 30px;
+  margin: 0 10px;
+  scroll-behavior: smooth;
+}
